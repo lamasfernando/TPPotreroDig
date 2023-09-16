@@ -1,0 +1,206 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Voltaire', sans-serif;
+}
+
+/* inicio */
+
+.image-container {
+    position: relative;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-text {
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-20%, -50%);
+    z-index: 1;
+    color: rgb(59, 59, 85);
+    font-size: 11vw;
+}
+
+/* HISTORIA*/
+
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    flex-flow: wrap;
+    background-color: rgb(59, 59, 85);
+    align-items: center;
+}
+
+.columna {
+    width: 50%;
+}
+
+.columna p {
+    color: white;
+    font-size: 24px;
+    margin: 15px;
+}
+
+.columna h2 {
+    color: white;
+    text-decoration: underline white;
+    font-size: 40px;
+    margin: 15px;
+}
+
+.columna img {
+    width: 100%;
+    padding: 30px;
+    border-radius: 15%;
+}
+
+
+/* UBICACION */
+
+.izquierda {
+    width: 100%;
+    margin: 20px;
+}
+
+.derecha {
+    width: 100%;
+}
+
+#ubicacion {
+    background: rgb(59, 59, 85);
+    display: flex;
+    align-items: center;
+}
+
+.izquierda p {
+    color: white;
+    font-size: 24px;
+}
+
+.izquierda h2 {
+    color: white;
+    text-decoration: underline white;
+    font-size: 40px;
+}
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    margin: 20px;
+}
+
+.map-responsive iframe {
+    left: 0%;
+    top: 0%;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+/* RECETA */
+
+/* Lista desordenada */
+
+#ingredientes h1 {
+    color: rgb(59, 59, 85);
+    background-color: rgb(230, 230, 230);
+    font-size: 8vw;
+    text-align: center;
+}
+
+#ingredientes .contenedor {
+    background-color: rgb(230, 230, 230);
+    padding: 20px;
+}
+
+#ingredientes .columna h2 {
+    color: rgb(59, 59, 85);
+    text-decoration: underline rgb(59, 59, 85);
+    font-size: 30px;
+}
+
+.columna ul {
+    color: rgb(59, 59, 85);
+    font-size: 24px;
+}
+
+#ingredientes .contenedor img {
+    width: 70%;
+    height: auto;
+    padding: 0;
+}
+
+/* Lista desordenada */
+
+.columna ol {
+    color: rgb(59, 59, 85);
+    font-size: 24px;
+}
+
+/* MAS INFORMACION */
+
+/* Audio */
+
+#informacion {
+    background-color: rgb(59, 59, 85);
+    padding: 15px;
+}
+
+#informacion h1 {
+    color: white;
+    font-size: 4vw;
+    text-align: center;
+}
+
+.columna audio {
+    width: 90%;
+}
+
+/* Video */
+
+.columna iframe {
+width: 90%;
+}
+
+
+/* FOOTER */
+.final h3 {
+    color: rgb(59, 59, 85);
+    font-size: 4vw;
+    text-align: center;
+}
+
+
+/* Responsive layout  */
+@media screen and (max-width:800px) {
+    .grid-container p {
+        width: 100%;
+    }
+
+    #ubicacion {
+        display: inline-block;
+    }
+
+    .izquierda {
+        width: fit-content;
+    }
+
+    .contenedor {
+        flex-direction: column;
+    }
+
+    .columna {
+        width: 100%;
+        padding: 15px;
+    }
+}
