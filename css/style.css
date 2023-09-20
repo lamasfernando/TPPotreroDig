@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -313,7 +314,7 @@ nav ul li a:hover{
     }
     .menu-toggle:before{
         content: '\f0c9';
-        font-style: fontAwesome;
+        font-family: FontAwesome;
         line-height: 40px;
     }
     .menu-toggle.active:before{
