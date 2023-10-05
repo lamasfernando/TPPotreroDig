@@ -243,7 +243,6 @@ width: 90%;
 .logo{
     color: rgb(59, 59, 85);
     height: 60px;
-    font-size: 24px;
     line-height: 60px;
     padding: 0 20px;
     text-align: center;
@@ -332,7 +331,7 @@ footer nav {
     
 }
 
-footer .title {
+footer .title h1{
     color: rgb(230, 230, 230);
     font-size: 20px;
 }
@@ -566,7 +565,7 @@ input[type="checkbox"] {
         color: rgb(59, 59, 85);
     }
 
-    #menu .title-footer {
+    #menu .title-footer h1{
         color: rgb(230, 230, 230);
     }
 
