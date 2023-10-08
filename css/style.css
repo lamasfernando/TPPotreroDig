@@ -53,7 +53,7 @@
 /* HISTORIA*/
 
 
-.contenedor {
+#historia .contenedor {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -143,6 +143,12 @@
 #ingredientes .contenedor {
     background-color: rgb(230, 230, 230);
     padding: 20px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    flex-flow: wrap;
+    align-items: center;
 }
 
 #ingredientes .columna h2 {
@@ -173,10 +179,20 @@
 
 /* Audio */
 
+
 #informacion {
     background-color: rgb(59, 59, 85);
     padding: 15px;
     border-bottom: rgb(230, 230, 230) solid 1px;
+}
+
+#informacion .contenedor {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    flex-flow: wrap;
+    align-items: center;
 }
 
 #informacion h1 {
