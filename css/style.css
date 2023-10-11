@@ -673,24 +673,3 @@ textarea {
     }
 }
 
-@media screen and (max-width: 569px) {
-
-    .direct-contact-container,
-    .form-wrapper {
-        float: none;
-        margin: 0 auto;
-    }
-
-    .name,
-    .email,
-    textarea {
-        width: 280px;
-    }
-
-}
-
-@media screen and (max-width: 410px) {
-    .send-button {
-        width: 99%;
-    }
-}
