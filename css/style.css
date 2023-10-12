@@ -175,6 +175,40 @@
     font-size: 24px;
 }
 
+/* Responsive layout  */
+@media only screen and (max-width: 1200px) and (orientation: landscape) {
+   
+    #ingredientes .contenedor img {
+        display: none;
+    }
+    
+    #ingredientes .contenedor {
+        background: #fff;
+        background-image: url(../img/steptodown.com363594-removebg-preview.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+#ingredientes .contenedor ul {
+    color: black;
+}
+
+#ingredientes .contenedor ol {
+    color: black;
+}
+
+#ingredientes .contenedor h2 {
+    color: black;
+}
+
+#ingredientes h1 {
+    background: white;
+    color: black;
+}
+}
+
+
 /* MAS INFORMACION */
 
 /* Audio */
@@ -209,14 +243,6 @@
 
 .columna iframe {
 width: 90%;
-}
-
-
-/* FOOTER */
-.final h3 {
-    color: rgb(59, 59, 85);
-    font-size: 4vw;
-    text-align: center;
 }
 
 
@@ -673,3 +699,24 @@ textarea {
     }
 }
 
+@media screen and (max-width: 569px) {
+
+    .direct-contact-container,
+    .form-wrapper {
+        float: none;
+        margin: 0 auto;
+    }
+
+    .name,
+    .email,
+    textarea {
+        width: 280px;
+    }
+
+}
+
+@media screen and (max-width: 410px) {
+    .send-button {
+        width: 99%;
+    }
+}
