@@ -886,6 +886,23 @@ textarea {
 color: white;
 }
 
+@media screen and (max-width: 750px) {
+    .btn-mode {
+        display: block;
+    }
+
+    .btn-mode.sun{
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    .btn-mode.moon{
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+}
+
+
 /* Boton Footer*/
 
 
