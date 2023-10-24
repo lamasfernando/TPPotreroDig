@@ -184,7 +184,7 @@ header .title {
 #ingredientes h1 {
     color: rgb(59, 59, 85);
     background-color: rgb(230, 230, 230);
-    font-size: 8vw;
+    font-size: 7vw;
     text-align: center;
     margin-bottom: 0;
 }
@@ -489,7 +489,7 @@ footer .social-icon img {
 #active:checked~.wrapper {
     clip-path: circle(75%);
     background-color: rgb(59, 59, 85);
-    z-index: 2;
+    z-index: 900;
 }
 
 .menu-btn {
@@ -500,7 +500,7 @@ footer .social-icon img {
     width: 2.5rem;
     height: 2.5rem;
     cursor: pointer;
-    z-index: 3;
+    z-index: 999;
 }
 
 span {
@@ -797,3 +797,157 @@ textarea {
     }
 }
 
+/* Modo Oscuro*/
+
+.container-btn-mode{
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    cursor: pointer;
+    font-size:0;
+  }
+  .btn-mode{
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    border:2px solid black;
+    transition: background-color .5s;
+  }
+  .btn-mode i {
+    display: block;
+    font-size: 17px;
+    text-align: center;
+    line-height: 30px;
+  }
+  .btn-mode.sun{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-right: 1px solid transparent;
+  }
+  .btn-mode.moon{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  .activo{
+    background-color:black;
+    color:#ffcd5c !important;
+  }
+
+  .dark-mode{
+    background-color: #1A1C1E;
+    transition:background-color .5s;
+  }
+  .dark-mode .card{
+    background-color: #1A1C1E;
+  }
+  .dark-mode h1, .dark-mode h2, .dark-mode .btn-contact{
+    color:white;
+  }
+  .dark-mode .btn-mode{
+    background-color:#1A1C1E;
+    border:1px solid white;
+    color:white;
+  }
+
+  .dark-mode #historia .contenedor {
+    background-color: #1A1C1E;
+  }
+
+  .dark-mode #ubicacion {
+    background-color: #1A1C1E;
+  }
+
+  .dark-mode #ingredientes .contenedor {
+    background-color: #1A1C1E;
+  }
+.dark-mode #ingredientes h1 {
+    background-color: #1A1C1E;
+    color: white;
+}
+
+.dark-mode #ingredientes ol, .dark-mode #ingredientes ul, .dark-mode #ingredientes h2 {
+    color: white;
+    text-decoration: none;
+}
+
+.dark-mode #informacion { 
+    background-color: #1A1C1E;
+}
+
+.dark-mode footer nav{
+    background-color: #1A1C1E;
+}
+
+.dark-mode #navegador p, .dark-mode #navegador a{
+    color: white;
+}
+
+.dark-mode h5 {
+color: white;
+}
+
+/* Boton Footer*/
+
+
+
+.button-group button {
+    padding: 10px 20px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    position: relative;
+}
+.button-group button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 5px 0 #ccc;
+}
+
+
+@media screen and (max-width: 850px) {
+    .dialog-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* Alert Bienvenida*/
+
+.alert {
+    background-color: #eee;
+    font-family: monospace;
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: 20px;
+    text-align: right;
+    transition: 0.5s;
+  }
+  
+  .alert b {
+    font-size: 18px;
+    display: block;
+    text-align: left;
+    margin: 0 10px;
+    padding: 0;
+  }
+  
+  .alert p {
+    font-size: 16px;
+    display: block;
+    text-align: left;
+    margin: 10px 10px;
+    padding: 0;
+  }
+  
+  .alert button {
+    background-color: #55ccff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    margin: 0;
+    padding: 5px 15px;
+    outline: none;
+  }
+  
